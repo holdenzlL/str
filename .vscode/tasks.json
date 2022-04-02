@@ -8,7 +8,7 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${fileDirname}/main.c",
-                "${fileDirname}/charstring.c",
+                "${fileDirname}/str.c",
                 "-o",
                 "${fileDirname}/main",
             ],
