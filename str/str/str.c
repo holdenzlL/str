@@ -114,14 +114,14 @@ str_p readin_file_str(const char *filename)
     FILE *fp;
     long size;
 
-    fp = fopen(filename, "rb");
+    fp = fopen(filename, "r");
     if (!fp)
     {
         perror("Error opening file");
         return NULL;
     }
-    size = ftell(fp);
     fseek(fp, 0, SEEK_END);
+    size = ftell(fp);
     str_p p = zero_str((size_t)size);
 
     if (size != fread(p->buffer, 1, size, fp))
