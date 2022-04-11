@@ -28,8 +28,6 @@ extern "C" {
 	str_p cpy_str(const str_p p);
 	// get the size
 	size_t sizeof_buff(const char* string);
-	// return the size
-	size_t size_str(const str_p p);
 	// create and initialize an str, return NULL if fail
 	str_p zero_str(size_t size);
 	// generate a str with elements in reverse, return NULL if fail

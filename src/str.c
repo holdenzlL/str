@@ -42,11 +42,6 @@ str_p cpy_str(const str_p p)
 	return new_str(p->buffer);
 }
 
-size_t size_str(const str_p p)
-{
-	return p->size;
-}
-
 str_p zero_str(size_t size)
 {
 	str_p p = (str_p)malloc(sizeof(str));
@@ -86,14 +81,7 @@ str_p revs_str(const str_p p)
 
 size_t sizeof_buff(const char* string)
 {
-	//cant process NULL
-	size_t i = 1;
-	while (*string != '\0')
-	{
-		i++;
-		string++;
-	}
-	return i;
+	return strlen(string);
 }
 
 str_p overwrite_str(str_p p, const char* string)

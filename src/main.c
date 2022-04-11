@@ -1,11 +1,10 @@
 
-#include <stdio.h>
 #include "str.h"
 
 int main()
 {
-	str_p p = new_str(" world!");
-	write2_file_str("D:/Documents/GitHub/cstring/str/str/testfile", p);
-	printf("%s", readin_file_str("D:/Documents/GitHub/cstring/str/str/testfile")->buffer);
+	str_p q = NULL;
+	str_p p = overwrite_str(q,"");
+	
 	return 0;
 }
