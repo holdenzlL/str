@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1e0a426e-c3ed-4c9e-adf4-ab645f956a44}</ProjectGuid>
+    <ProjectGuid>{0e0f0a7b-697e-4fd7-8626-a13175baf83c}</ProjectGuid>
     <RootNamespace>str</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -139,11 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\main.c" />
-    <ClCompile Include="..\..\str.c" />
+    <ClCompile Include="..\..\..\src\main.c" />
+    <ClCompile Include="..\..\..\src\str.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\str.h" />
+    <ClInclude Include="..\..\..\src\str.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

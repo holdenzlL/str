@@ -1,3 +1,0 @@
-﻿  str.c
-D:\Documents\GitHub\cstring\str\str\str.c(280,13): warning C4098: 'write2_file_str': 'void' function returning a value
-  str.vcxproj -> D:\Documents\GitHub\cstring\str\str\str\x64\Debug\str.exe
