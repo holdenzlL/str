@@ -16,6 +16,7 @@ extern "C" {
 	} str;
 
 #define null_str ((str){ 0, 0 })
+#define _STR_VERSION 1.0
 
 	typedef str* str_p;
 
